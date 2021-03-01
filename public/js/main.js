@@ -67,3 +67,21 @@ buttonGo.addEventListener("click", () =>{
     let valeur = name.value[0].toUpperCase()+ name.value.slice(1)
     inconnu.innerText = `welcome ${valeur}`
 })
+
+// Exo 4
+let i = 0
+let boxButton = exo4.querySelector("button")
+boxButton.addEventListener("click", () => {
+
+    let box1 = document.querySelector("#box1")
+    box1.classList.toggle('d-none')
+
+    let box2 = document.querySelector("#box2")
+    box2.classList.toggle('d-none')
+
+    i++
+    let boxSpan = exo4.querySelector("span")
+    boxSpan.innerText = `nombre de click ${i}`
+})
+
+// Exo 5
