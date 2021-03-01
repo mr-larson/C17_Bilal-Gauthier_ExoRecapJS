@@ -57,6 +57,14 @@ buttons[5].addEventListener("click", () =>{
     }
     active = exo6
 })
+buttons[6].addEventListener("click", () =>{
+    let exo7 = document.querySelector("#exo7")
+    exo7.classList.remove("d-none")
+    if (active){
+        active.classList.add("d-none")
+    }
+    active = exo7
+})
 
 // Exo 3 Start
 let buttonGo = document.querySelector("#exo3 button")
@@ -68,7 +76,7 @@ buttonGo.addEventListener("click", () =>{
     inconnu.innerText = `welcome ${valeur}`
 })
 
-// Exo 4
+// Exo 4 Start
 let i = 0
 let boxButton = document.querySelector("#exo4 button")
 boxButton.addEventListener("click", () => {
@@ -84,7 +92,7 @@ boxButton.addEventListener("click", () => {
     boxSpan.innerText = `nombre de click ${i}`
 })
 
-// Exo 5
+// Exo 5 Start
 
 let buttonOeuf = document.querySelector("#exo5 button")
 
@@ -96,7 +104,7 @@ buttonOeuf.addEventListener("click", () => {
     divOeuf.appendChild(imgOeuf)
 })
 
-//Exo 6
+//Exo 6 Start
 
 let buttonEgale = document.querySelector("#exo6 button")
 let valeur1 = document.querySelector("#exo6 input")
@@ -158,7 +166,7 @@ remote.addEventListener("click", () => {
     reponse.innerText = '?'
 })
 
-
+// Exo 7 Start
 
 
 
