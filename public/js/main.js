@@ -57,14 +57,14 @@ buttons[5].addEventListener("click", () =>{
     }
     active = exo6
 })
-buttons[6].addEventListener("click", () =>{
+/* buttons[6].addEventListener("click", () =>{
     let exo7 = document.querySelector("#exo7")
     exo7.classList.remove("d-none")
     if (active){
         active.classList.add("d-none")
     }
     active = exo7
-})
+}) */
 
 // Exo 3 Start
 let buttonGo = document.querySelector("#exo3 button")
