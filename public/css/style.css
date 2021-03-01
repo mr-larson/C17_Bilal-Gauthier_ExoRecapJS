@@ -10626,9 +10626,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  margin: 0;
-  padding: 0;
+p {
+  margin: 0 !important;
+  padding: 0 !important;
   /** Header Start **/
 }
 
