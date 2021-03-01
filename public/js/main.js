@@ -1,11 +1,11 @@
-// Exo 1
+// Exo 1 Start
 let titre = document.querySelector("h2")
 
 titre.innerText = "le titre modifié"
 titre.style.color = "red"
 titre.classList.add("bg-primary")
 
-// Exo 2
+// Exo 2 Start
 let buttons = document.querySelectorAll("#header .btn")
 let active;
 
@@ -58,4 +58,12 @@ buttons[5].addEventListener("click", () =>{
     active = exo6
 })
 
-// Exo 3
+// Exo 3 Start
+let buttonGo = document.querySelector("#exo3 button")
+let inconnu = document.querySelector("#exo3 h2")
+let name = document.querySelector("#exo3 input")
+
+buttonGo.addEventListener("click", () =>{
+    let valeur = name.value[0].toUpperCase()+ name.value.slice(1)
+    inconnu.innerText = `welcome ${valeur}`
+})
