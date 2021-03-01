@@ -70,7 +70,7 @@ buttonGo.addEventListener("click", () =>{
 
 // Exo 4
 let i = 0
-let boxButton = exo4.querySelector("button")
+let boxButton = document.querySelector("#exo4 button")
 boxButton.addEventListener("click", () => {
 
     let box1 = document.querySelector("#box1")
@@ -85,3 +85,13 @@ boxButton.addEventListener("click", () => {
 })
 
 // Exo 5
+
+let buttonOeuf = document.querySelector("#exo5 button")
+
+buttonOeuf.addEventListener("click", () => {
+    let imgOeuf = document.createElement("img")
+    imgOeuf.src = "./public/img/oeuf.png"
+    imgOeuf.style.height = "100px"
+    let divOeuf = document.querySelector("#oeufs")
+    divOeuf.appendChild(imgOeuf)
+})
