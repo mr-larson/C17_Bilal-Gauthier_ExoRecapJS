@@ -95,3 +95,73 @@ buttonOeuf.addEventListener("click", () => {
     let divOeuf = document.querySelector("#oeufs")
     divOeuf.appendChild(imgOeuf)
 })
+
+//Exo 6
+
+let buttonEgale = document.querySelector("#exo6 button")
+let valeur1 = document.querySelector("#exo6 input")
+let valeur2 = document.querySelectorAll("#exo6 input")[1]
+let resultat = document.querySelector("#rep")
+
+buttonEgale.addEventListener("click", () => {
+    resultat.innerText = parseInt(valeur2.value) + parseInt(valeur1.value)
+})
+
+
+// Exo 6 : calculatrice
+
+let numbers = document.querySelectorAll(".numbers")
+let inputCal = document.querySelector("#calculatrice input")
+let operators = document.querySelectorAll(".operators")
+let off = false
+let valeurFirst = ''
+let operateur = ''
+let egale = document.querySelector("#egale")
+let reponse = document.querySelector("#calculatrice span")
+
+
+for (const number of numbers) {
+    number.addEventListener("click", (e) => {
+        inputCal.value += e.currentTarget.textContent
+    })
+}
+for (const operator of operators) {
+    operator.addEventListener("click", (e) => {
+        valeurFirst = inputCal.value
+        inputCal.value = ''
+        operateur = e.currentTarget.textContent
+})
+}
+
+egale.addEventListener("click", () => {
+
+    switch (operateur) {
+        case "+":
+            reponse.textContent = parseInt(valeurFirst) + parseInt(inputCal.value)
+            break;
+        case "-":
+            reponse.textContent = parseInt(valeurFirst) - parseInt(inputCal.value)
+            break;
+        case "*":
+            reponse.textContent = parseInt(valeurFirst) * parseInt(inputCal.value)
+            break;
+        case "/":
+            reponse.textContent = parseInt(valeurFirst) / parseInt(inputCal.value)
+            break;
+    }
+})
+
+let remote = document.querySelector("#remote")
+
+remote.addEventListener("click", () => {
+    inputCal.value = ''
+    reponse.innerText = '?'
+})
+
+
+
+
+
+
+
+

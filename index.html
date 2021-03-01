@@ -104,13 +104,54 @@
 
   <!-- Exo 6 -->
 
-  <section class="container bg-secondary d-none p-5">
+  <section id="exo6" class="container bg-secondary d-none p-5">
+    <h2>Création calculatrice</h2>
+    <h3>Niveau 1</h3>
+    <div>
+      <input type="text">
+      <span>+</span>
+      <input type="text">
+      <button>=</button>
+      <span id="rep">?</span>
+    </div>
+    <!-- calculatrice -->
 
+    <h3>Niveau 2</h3>
+
+    <div id="calculatrice" class="container py-3 px-1">
+      <input type="text">
+      <span>?</span>
+      <div class="row my-2">
+        <div class=" numbers col"><button>1</button></div>
+        <div class=" numbers col"><button>2</button></div>
+        <div class=" numbers col"><button>3</button></div>
+        <div class=" operators col"><button>+</button></div>
+      </div>
+      <div class="row my-2">
+        <div class=" numbers col"><button>4</button></div>
+        <div class=" numbers col"><button>5</button></div>
+        <div class=" numbers col"><button>6</button></div>
+        <div class=" operators col"><button>-</button></div>
+      </div>
+      <div class="row my-2">
+        <div class=" numbers col"><button>7</button></div>
+        <div class=" numbers col"><button>8</button></div>
+        <div class=" numbers col"><button>9</button></div>
+        <div class=" operators col"><button>*</button></div>
+      </div>
+      <div class="row my-2">
+        <div id="remote" class="col"><button>c</button></div>
+        <div class=" numbers col"><button>0</button></div>
+        <div id="egale" class="col"><button>=</button></div>
+        <div class=" operators col"><button>/</button></div>
+      </div>
+    </div>
   </section>
+
+
+
+
 
   <script src="public/js/main.js" type="module"></script>
 </body>
-
-
-
 </html>
