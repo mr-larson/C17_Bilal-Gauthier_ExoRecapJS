@@ -10629,7 +10629,6 @@ textarea.form-control-lg {
 p {
   margin: 0 !important;
   padding: 0 !important;
-  /** Header Start **/
 }
 
 .header {
@@ -10640,6 +10639,20 @@ h1, .h1 {
   background: linear-gradient(#0d6efd, #182d70 99%);
   text-align: center;
   text-shadow: 0 0 10px #0c112e;
+  animation: changeColor 10s linear infinite;
+}
+@keyframes changeColor {
+  0% {
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: hue-rotate(360deg);
+  }
 }
 
 .btn {
@@ -10661,7 +10674,7 @@ h1, .h1 {
   font-size: 19px;
   border-radius: 23px;
   color: #fff;
-  box-shadow: 0 0 10px #4fb9ff, 0 0 20px #338bff;
+  box-shadow: 0 0 10px #5f98d8, 0 0 20px #727880;
   background: linear-gradient(to right, #0d6efd, #172b6b 99%);
 }
 
@@ -10698,10 +10711,6 @@ h1, .h1 {
 }
 
 #calculatrice {
-  position: relative;
-  background: rgba(255, 255, 255, 0.384) !important;
-  overflow: hidden;
-  -webkit-backdrop-filter: blur(15px);
   width: 200px;
   border-radius: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
