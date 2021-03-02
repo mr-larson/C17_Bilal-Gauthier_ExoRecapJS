@@ -10797,4 +10797,26 @@ h1, .h1 {
   transition: 0.2s;
 }
 
+#exo7 button {
+  border: solid white 1px;
+}
+#exo7 .check {
+  background-color: #198754;
+  color: white;
+}
+#exo7 .edit {
+  background-color: #ffc107;
+  color: black;
+}
+#exo7 .trash {
+  background-color: #dc3545;
+  color: white;
+}
+#exo7 ul input {
+  border: none;
+  outline-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 400px;
+}
+
 /*# sourceMappingURL=style.css.map */

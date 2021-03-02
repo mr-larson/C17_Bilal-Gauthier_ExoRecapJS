@@ -8,7 +8,7 @@
   <title>Exo_Recap_JS</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
   <link rel="stylesheet" href="public/css/style.css">
 </head>
 
@@ -26,6 +26,7 @@
       <button class="btn">Exercice 4</button>
       <button class="btn">Exercice 5</button>
       <button class="btn">Exercice 6</button>
+      <button class="btn">Exercice 7</button>
     </div>
   </section>
 
@@ -154,7 +155,27 @@
   </section>
 
   <!-- Exo 7 Start -->
+  <section id="exo7" class="container bg-secondary p-5 d-none">
+    <h2>TodoList</h2>
+    <hr>
+    <input type="text" class="form-control">
+    <div class="text-center py-3">
+      <button class="btn bg-success text-light">Toutes</button>
+      <button class="btn bg-success text-light">Completes</button>
+      <button class="btn bg-success text-light">A faire</button>
+    </div>
+    <ul>
+      <li class="d-flex justify-content-between bg-white py-2 px-2 my-2 d-none">
+        <input type="text" value="test1" readonly="readonly">
+        <div>
+          <button class="check"><i class="fas fa-check"></i></button>
+          <button class="edit"><i class="fas fa-edit"></i></button>
+          <button class="trash"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </li>
+    </ul>
 
+  </section>
 
 
   <script src="./node_modules/vanilla-tilt/dist/vanilla-tilt.js" type="text/javascript"></script>
